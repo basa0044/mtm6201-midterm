@@ -11,15 +11,17 @@
 <body>
     <!-- container holds the entire website content -->
     <div class="container"> 
-        <header>
+        <div>
             <label for="hamburger-button">
                 <input type="checkbox" class="hamburger-button" id="hamburger-button">
 
-                <div class="hamburger">
+                <span class="hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </span>
+            
+            
 
                 <nav>
                     <ul>
@@ -27,7 +29,7 @@
                             <img src="images/la brioche logo.png" alt="la brioche logo">
                         </li>
                         <li>
-                            <a class="current" href="#home">Home</a>
+                            <a class="#current" href="#home">Home</a>
                         </li>
                         <li>
                             <a href="#about">About Us</a>
@@ -39,12 +41,26 @@
                 </nav>
 
             </label>
+            
             <input id="search" type="text" placeholder="Search..">
             <i class="icon icon-cart"></i>
+        </div>
+        <header class="main-banner">
+            <img src="images/sandi-benedicta-2KEo2FL1n9o-unsplash.jpg" alt="powdering the dought">
+            <div>
+                <h1>La Brioche Pastry & Bakery</h1>
+            </div>
+            <button type="button">ORDER NOW !<i class="icon icon-right"></i></button>
 
         </header>
 
-        <main>
+        <main class="gallery">
+            <h2>Gallery</h2>
+            <div>
+                <img src="images/youjeen-cho-QpwNft_7ICg-unsplash.jpg" alt="sliced bread">
+                <img src="images/slashio-photography-T5KPTbbK-_E-unsplash.jpg" alt="vanilla cake with yellow macarones on top">
+                <img src="images/alex-lvrs-aX_ljOOyWJY-unsplash.jpg" alt="sliced pie with white cream">
+            </div>
         </main>
     </div>
 </body>
