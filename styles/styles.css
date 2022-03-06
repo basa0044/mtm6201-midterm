@@ -73,6 +73,10 @@ nav{
 	left: -100vw;
 }
 
+.container > div > p{
+	display: none;
+}
+
 .hamburger{
 	padding: 2%;
 	z-index: 1;
@@ -221,7 +225,8 @@ button i{
 h2{
 	text-align: center;
 	font-size: 6vw;
-	margin: 3rem;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
 	color: #c78a21;
 }
 
@@ -253,4 +258,85 @@ h2{
 .gallery > div > img:last-child{
 	grid-column: 1 / 2;
 	grid-row: 3 / 4;
+}
+
+img ~ i{
+	color: rgba(128, 128, 128, 0.664);
+	height: 7rem;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+footer{
+	background-color: #c78a21;
+	text-align: center;
+}
+
+footer p{
+	display: block;
+	color: white;
+	font-size: 1rem;
+	width: 45%;
+	height: auto;
+	text-align: left;
+	padding: 5%;
+	font-size: 4vw;
+}
+
+footer > img{
+	width: 30%;
+	height: 10%;
+}
+
+footer > div{
+	background-color: #c78a21;
+	border: none;
+	padding: 8%;
+}
+
+@media screen and (min-width: 480px) and (max-width: 760px){
+	
+	/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAV ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+	.container > div > p{
+		display: contents;
+		display: block;
+		padding-right: 3%;
+		color: white;
+	}
+
+	.main-banner > div{
+		grid-column: 1 / 2;
+		grid-row: 3 / 5;
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+	.main-banner > button{
+		margin-bottom: 3% ;
+		border-radius: 1rem;
+	}
+
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GALLERY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+	.gallery{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	.gallery > div > img:first-child{
+		grid-column: 1 / 2;
+		grid-row: 1 / 1; 
+	}
+
+	.gallery > div > img:nth-child(2){
+		grid-column: 2 / 3;
+		grid-row: 1 / 1; 
+	}
+
 }
