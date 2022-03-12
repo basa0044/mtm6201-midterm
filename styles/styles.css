@@ -317,6 +317,11 @@ footer > div{
 	padding: 8%;
 }
 
+footer div i{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
 table{
 	display: none;
 }
@@ -621,6 +626,15 @@ table{
 	footer p:first-child{
 		padding: 0;
 		padding-top: 2%;
+	}
+
+	footer div{
+		display: flex;
+		align-items: flex-end;
+	}
+
+	footer div i{
+		margin: 0%;
 	}
 
 }

@@ -271,6 +271,11 @@ footer > div{
 	display: flex;
 }
 
+footer div i{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
 
 table{
 	display: none;
@@ -537,5 +542,10 @@ table{
 		padding: 0;
 		padding-top: 2%;
 	}
+
+	footer div i{
+		margin: 0%;
+	}
+
 
 }
