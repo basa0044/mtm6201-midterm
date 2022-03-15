@@ -180,7 +180,7 @@ h1{
 	text-align: center;
 	margin: 10%;
 	font-size: 2rem;
-	font-weight: bold;
+	font-family: 'Acme', sans-serif;
 }
 
 .form{
@@ -203,7 +203,9 @@ h1{
 }
 
 .form div p{
-	width: 80%;
+	width: 70%;
+	font-family: 'Kalam', cursive;
+	text-align: left;
 }
 
 form{
@@ -221,11 +223,13 @@ form input{
 
 form input:last-child{
 	align-self: flex-end;
+	font-family: 'Kalam', cursive;
 	width: 80px;
 	background-color: #0a0804;
 	color: #c78a21;
 	text-align: center;
 }
+
 
 textarea{
 		width: 100%;

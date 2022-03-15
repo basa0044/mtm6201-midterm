@@ -7,6 +7,8 @@
     <title>La Brioche Pastry & Bakery</title>
     <link href="styles/icons.css" rel="stylesheet">
     <link href="styles/contact.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- container holds the entire website content -->
@@ -59,24 +61,24 @@
         <main class="form">
             <div>
                 <p>Send us a message</p>
-                <form action="contact.html">
+                <form action="contact.html" method="post">
 
                     <label for="name"></label>
-                    <input type="text" id="name" placeholder="First name">
+                    <input id="name" type="text" placeholder="Name">
 
-                    <label for="surname"></label>
-                    <input type="text" id="sname" placeholder="Last name">
+                    <label for="last-name"></label>
+                    <input type="text" id="last-name" placeholder="Last Name">
                 
-                    <label for="e-mail"></label>
+                    <label for="email"></label>
                     <input type="email" id="email" placeholder="E-mail">
 
                     <label for="number"></label>
-                    <input type="pnumber" id="number" placeholder="Phone Number">
+                    <input type="number" id="number" placeholder="Phone Number">
                 
                     <label for="message"></label>
                     <textarea id="message" placeholder="Your message"></textarea>
                 
-                    <input type="send" value="SEND">
+                    <input type="button" value="SEND">
                 
                   </form>
             </div>
